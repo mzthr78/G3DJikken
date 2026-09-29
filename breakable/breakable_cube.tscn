@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cfpg6n634dnqa"]
+
+[ext_resource type="Script" uid="uid://chww0yn5kmxi7" path="res://breakable/breakable_cube.gd" id="1_byrqj"]
+[ext_resource type="PackedScene" uid="uid://5fka012vbqpq" path="res://breakable/cube.glb" id="3_w1p3t"]
+[ext_resource type="PackedScene" uid="uid://cj8x4yya3rflx" path="res://breakable/cube_breakable.glb" id="4_wiplq"]
+
+[node name="breakable_cube" type="Node3D" unique_id=726910711]
+script = ExtResource("1_byrqj")
+
+[node name="cube" parent="." unique_id=2116698223 instance=ExtResource("3_w1p3t")]
+
+[node name="cube_breakable" parent="." unique_id=1985322488 instance=ExtResource("4_wiplq")]
+
+[node name="Marker3D" type="Marker3D" parent="." unique_id=927439656]

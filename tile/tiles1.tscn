@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5611qllf58kg"]
+
+[ext_resource type="PackedScene" uid="uid://cm8smfr60u4kk" path="res://tile/cube.glb" id="1_mthni"]
+[ext_resource type="PackedScene" uid="uid://c0vv4bjaa0xm0" path="res://tile/sphere.glb" id="2_420c2"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="cube" parent="." instance=ExtResource("1_mthni")]
+
+[node name="sphere" parent="." instance=ExtResource("2_420c2")]

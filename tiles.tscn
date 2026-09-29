@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dw48mrleufwj4"]
+
+[ext_resource type="MeshLibrary" uid="uid://dm6lxvjmlats" path="res://tile/tiles2.tres" id="1_7h0kd"]
+[ext_resource type="MeshLibrary" uid="uid://dyd3albgdvop" path="res://tile/tiles1.tres" id="2_k6t24"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="GridMap" type="GridMap" parent="."]
+visible = false
+mesh_library = ExtResource("1_7h0kd")
+data = {
+"cells": PackedInt32Array(0, 0, 0, 1, 0, 0, 2, 0, 0, 0, 1, 1, 1, 1, 1, 2, 1, 1, 0, 2, 1, 1, 2, 1, 2, 2, 1)
+}
+
+[node name="GridMap2" type="GridMap" parent="."]
+mesh_library = ExtResource("2_k6t24")
+data = {
+"cells": PackedInt32Array(0, 0, 0, 1, 0, 0, 2, 0, 0, 0, 1, 1, 1, 1, 1, 2, 1, 1)
+}
