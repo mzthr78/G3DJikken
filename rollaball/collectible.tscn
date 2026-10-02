@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dm8w7vshtkm7x"]
+
+[ext_resource type="Script" uid="uid://cm0dqb2r835de" path="res://rollaball/collectible.gd" id="1_d2hmk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j1cya"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_owfg4"]
+albedo_color = Color(1, 1, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_j1cya"]
+material = SubResource("StandardMaterial3D_owfg4")
+
+[node name="Area3D" type="Area3D" unique_id=115014330]
+script = ExtResource("1_d2hmk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1623209696]
+shape = SubResource("BoxShape3D_j1cya")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=977798317]
+mesh = SubResource("BoxMesh_j1cya")
